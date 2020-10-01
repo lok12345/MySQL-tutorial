@@ -1,0 +1,118 @@
+Welcome all of you to MySQL tutorial video series
+video 2:
+
+.To create database:
+	create database <database_name>;
+eg:
+	create database transport;
+
+.To see database name in table:
+	show databases;
+
+.To use any database:
+	use <database_name>
+eg:
+	use transport;
+
+.To create table inside database:
+
+	create table <table_name>(
+	column_name datatype(size),
+	column_name2 datatype(size),
+	.
+	.
+	.
+	column_name n datatype(size)
+	);
+
+eg:
+	create table driver(
+	name varchar(32),
+	age int(32),
+	contact int(128),
+	bus_number int(32)
+	);
+
+.To see about the skeleton of table:
+	desc <table_name>;
+
+eg:
+	desc driver;
+
+
+.To insert data in table:
+	insert into <table_name> (column_name1,column_name2....column_name n) values (value1,value2,....,value n);
+
+eg:
+	insert into driver(name,age,contact,bus_number) values ('hari',32,98651111,234); [we have to enclose varchar attribute into apostrophe]
+we can also insert other in same ways
+
+.To see effect in table to know whether table is updated or not:
+	
+	select * from <table_name>;
+* : it ask to display the table with all values included in it
+
+eg:
+	select * from driver;
+
+. we can also insert without defining the column_name such as:
+	insert into driver values('ram',33,673848,256);
+** we must provide the value as table expect to have from us i.e. serially as we have done while defining the table as:name then age then contact and then bus_number
+
+. we can also insert value by shuffling the column name as:
+	eg:
+		insert into driver (age,name,contact,bus_number) values (45,'rita',4452342,289);
+
+
+
+TO UPDATE THE TABLE:
+we can update any data of the table by the help of the update command such as:
+
+command:
+	update <table_name> set <column_name> = new_value where (primary_attribute> = value;
+
+eg:
+	update driver set name = 'ghanshyam' where age  = 45;
+
+we can update any value of the table by the help of the upate command
+
+
+TO DELETE ANY DATA FROM THE TABLE:
+
+command:
+	delete from <table_name> where <primary_key> = value;
+
+eg:
+	delete from driver where name = 'ghanshyam';
+
+To delete all the data from the table we use:
+
+command:
+	delete from <table_name>;
+
+eg:
+	delete from driver;
+
+[This command will delete all the data present in the driver table]
+
+
+So in this way we can use insert,update and delete command ta manipulate the table so these commands are also known as data manipulation language(DML)
+
+we can also use select command in different ways to display various data in table such as
+
+To display name only:
+	select name from driver;
+To display name and age:
+	select name,age from driver;
+
+In this way we can use select function to display single or multiple datum.
+
+These are the commands and their use which i have teach in this video of MySQL tutorial
+
+
+© Top 5 Advice
+
+These materials are for the educational purpose.So i won't be responsible for any misuse of these content
+
+Thank You
+
