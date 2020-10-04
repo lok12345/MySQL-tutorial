@@ -1,0 +1,123 @@
+DDL is a set of guidelines to which all the Structured Query Languages adhere to. As in the computer programming languages, we have the OOPS guidelines that all the programming languages adhere to, similarly, we have Data Definition Language standards that all the database languages adhere to – MySQL, Oracle, SQL Server, etc.
+
+1. CREATE:
+So, the first command under DDL is the Create command. The Create command is used to create a new database or a new component in the database like tables, stored procedure, index, etc.
+
+Syntax:
+To create a database
+
+CREATE DATABASE <DatabaseName>
+
+Syntax to create table:
+
+CREATE TABLE <TableName> (
+<Column1> <DataType>,
+<Column2> <DataType>,
+<Column3> <DataType>,
+.
+.
+.
+<ColumnN> <DataType>,
+);
+
+eg:
+
+CREATE TABLE Employees (
+Id INT,
+Name VARCHAR(50),
+Phone BIGINT,
+IsContractor BIT
+);
+
+2. ALTER
+
+Now let’s look at the Alter commands in DDL. They are used to modify the tables to add, rename, edit or delete a column. Alter command can also rename the table itself.
+
+Alter Table
+Let’s see the various Alter DDL commands:
+
+    i.Add a column
+    The Alter Table command allows us to add a column to an existing table.
+
+Syntax:
+
+ALTER TABLE <TableName> ADD <ColumnName> <DataType>;
+
+    ii.Modify a column
+
+The Alter Table command allows us to modify an existing column in an existing table. This is useful when modifying the type or the size of the column.
+
+Syntax:
+
+ALTER TABLE <TableName> MODIFY <ColumnName> <DataType>;
+
+     iii. Drop a column
+It is used to drop any eisting column from the table.
+
+syntax:
+
+ALTER TABLE <TableName> drop <ColumnName>;
+
+3.RENAME:
+
+  i. Rename a table
+
+The Alter Table command allows us to rename a table.
+
+Syntax:
+
+ALTER TABLE <TableName> RENAME TO <NewTableName>;
+
+    ii.Rename a column
+
+The Alter Table command allows us to rename a column in an existing table.
+
+Syntax:
+
+ALTER TABLE <TableName> RENAME COLUMN <ColumnName> TO <NewColumnName>;
+
+4.DROP
+
+   i.DROP TABLE
+
+Drop Table command deletes the whole table along with all the data.
+
+Syntax:
+
+DROP TABLE <TableName>;
+
+Example:
+
+DROP TABLE Employee;
+
+    ii.DROP DATABASE
+
+Drop Database command deletes the database and all the objects in it.
+
+Syntax:
+
+DROP DATABASE <DatabaseName>;
+
+5. TRUNCATE:
+
+Truncate is another DDL which is used to delete all the data from the table without affecting the structure of the table.
+
+syntax:
+
+truncate table <table_name>;
+
+The main difference between truncate and drop is that the execution of drop lead us to lose the structure of the table along with the data but execution of truncate lead us to lose all the data present in the table but structure won't be affected.
+
+**Advantages
+
+Below are some of the advantages explained.
+
+    1.The single largest advantage of Data Definition Language is uniformity.
+    2.A set of standards to which all Structured Query Languages conform.
+    3.Through DDL, the database schemas can be written in command forms and stored easily.
+    4.This also becomes easy to understand and write new command over time.
+    5.Thus, DDL, DML, DCL, and DQL bring uniformity at the very elementary level of all the structured query languages out there.
+
+**Conclusion
+
+In this article, we have learned about the Data Definition Language, its concept, its purpose and a few examples in MySQL. It is recommended to understand the concept of DDL as it is a frequent test of knowledge in the Information Technology world.
