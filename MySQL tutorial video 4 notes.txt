@@ -1,0 +1,95 @@
+NOTES FOR VIDEO 4:
+
+PUBLISHER DATABASE HAS BEEN CREATED
+
+INSIDE PUBLISHER TABLE NAME AS EMPLOYEES AND DEPARTMENT HAS BEEN CREATED
+
+IN EMPLOYEES TABLE INSERTION OF FOLLOWING DATA HAS BEEN DONE:
+EID:
+1,2,3,4,5,6
+
+ENAME:
+nikhil,nitin,sonali,anisha,neha,prerika
+
+SALARY:
+120000,140000,50000,60000,67000,15000
+
+DEPTID:
+10,10,20,20,30,30
+
+COMMISSION:
+20000,15000,5000,2000,null,null
+
+GENDER:
+M,M,F,F,F,F
+
+DESIGNATION:
+manager,manager,developer,developer,trainer,trainer
+
+IN DEPARTMENT TABLE INSERTION OF FOLLOWING DATA HAS BEEN DONE:
+
+DEPTID:
+10,20,30
+
+DNAME:
+sales,marketing,finance
+
+LOCATION:
+chitwan,kathmandu,bhaktapur
+
+Insertion of all the data must be one in order to match with my created table
+
+For insertion use insert command if u have any confusion do access my 2nd video of mysql tutorial. You will be clear about insertion in that video
+
+Today i will talk about the clauses that are frequently used in SQL task.
+
+i.   in
+ii.  between
+iii. like
+
+Today i will provide the note about the in clause along with some task for u to perform. Other two clauses will be disscussed in upcoming days.
+
+
+
+
+IN:
+
+The IN operator allows you to specify multiple values in a WHERE clause.
+
+The IN operator is a shorthand for multiple OR conditions.
+
+
+
+To clarify this statement let us consider a example
+eg:
+
+let us consider a query i.e.
+
+Find all the member from employees who either work in department whose id is either 10 or 20
+
+This can be done as:
+
+using in clause:
+
+select ename,deptid from employees where deptid in (10,20);
+
+using or condition:
+
+select ename,deptid from employees where deptid = 10 or deptid = 20;
+
+
+from above two process we can see that 'in' clause is used for exact matching of the value which can also be achived by using the 'or' condition but the length of the command for in the use of 'or' condition is longer.
+
+
+In video i have covered a small topic of sub-query:
+
+sub-query is the query inside query
+
+eg:
+find all the member whose deptid is either 10 or 20 using the refrence of subquery:
+
+select ename,deptid from employees where deptid in (select deptid from department where deptid in (10,20));
+
+here we have run two query i.e query inside query..so in this way we can achieve solution of sub-query.
+
+
