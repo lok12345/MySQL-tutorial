@@ -1,0 +1,31 @@
+for video 5:
+
+Between clause in SQL:
+
+between clause is the inclusive in nautere which display the value in between of the range including the starting and the end value of the range.
+
+Between is not applicable for the names,designation and gender of our database as it does not have range.
+
+order by:
+
+It is used by SQL to rearrange the table in specific order. It can be either ascending or descending.
+
+If we do not desclare then system will automamtically arrange the table in ascending order else as per directed.
+
+syntax for between:
+
+
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2; 
+
+Note that after between we have to provide value 1 and value 2 as compulsary term.
+
+To use not with between:
+
+SELECT column_name(s)
+FROM table_name
+WHERE column_name NOT BETWEEN value1 AND value2; 
+
+
+
