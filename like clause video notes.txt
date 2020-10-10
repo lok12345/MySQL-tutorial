@@ -1,0 +1,92 @@
+LIKE CLAUSE IN SQL:
+
+WHAT IS LIKE CLAUSE?
+==> LIKE CLAUES IS A CLAUSE OF SQL WHICH IS USED FOR THE PATTERN MATCHING AND CAN BE USED FOR THE NAME PATTERN MATCHING i.e. IT CAN BE USED FOR VARCHAR.
+
+IT HAS TWO OPERATOR
+
+i)  %
+ii) _
+
+% : The percent sign represents zero, one, or multiple characters
+
+_ : The underscore represents a single character
+
+syntax of like:
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE columnN LIKE pattern; 
+
+   LIKE Operator 	                         Description
+WHERE ename LIKE 'a%' 	          Finds any values that start with "a"
+WHERE ename LIKE '%a' 	          Finds any values that end with "a"
+WHERE ename LIKE '%or%' 	  Finds any values that have "or" in any position
+WHERE ename LIKE '_r%' 	          Finds any values that have "r" in the second position
+WHERE ename LIKE 'a_%' 	          Finds any values that start with "a" and are at least 2 characters in length
+WHERE ename LIKE 'a__%' 	  Finds any values that start with "a" and are at least 3 characters in length
+WHERE ename LIKE 'a%o' 	          Finds any values that start with "a" and ends with "o"
+
+
+
+.The following SQL statement selects all members with a Name starting with "a":
+
+Example
+
+SELECT * FROM employees
+WHERE ename LIKE 'a%';
+
+
+.The following SQL statement selects all members with a Name ending with "a":
+
+Example
+
+SELECT * FROM employees
+WHERE ename LIKE '%a';
+
+
+.The following SQL statement selects all members with a name that have "or" in any position:
+
+Example
+
+SELECT * FROM employees
+WHERE ename LIKE '%or%';
+
+.The following SQL statement selects all members with a name that have "r" in the second position:
+
+Example
+
+SELECT * FROM employees
+WHERE ename LIKE '_r%';
+
+.The following SQL statement selects all members with a Name that starts with "a" and are at least 3 characters in length:
+
+Example
+
+SELECT * FROM employees
+WHERE ename LIKE 'a__%';
+
+.The following SQL statement selects all members with a Name that starts with "a" and ends with "o":
+
+Example
+
+SELECT * FROM employees
+WHERE ename LIKE 'a%o';
+
+.The following SQL statement selects all members with a Name that does NOT start with "a":
+
+Example
+
+SELECT * FROM employees
+WHERE ename NOT LIKE 'a%';
+
+
+Assignment:
+
+1. find all the members from the employees table whose name has letter p in any place and from any deptid but have salary of range 10000 to 300000.
+2. find all the members whose name starts with n and have salary not less than 20000.
+3. find all the member whose name has r in 4th palce and have salary of 20000.
+4. find all the member whose name has 5 letters.
+
+Hope you all have enjoyed the video with better understanding of the content. Please do this assignment on your own that lead you to the better understanding of the problem.
+
