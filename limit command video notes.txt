@@ -1,0 +1,60 @@
+video for limit command used in SQL
+
+task done in video
+
+1. find 3 members of the employees
+
+syntax:
+
+select * from employees limit 3;
+
+2. find the max salary from employees
+
+syntax:
+
+select salary from employees order by salary desc limit 1;
+
+3.  find minimum salary from employees
+
+syntax:
+
+select salary from employees order by salary asc limit 1;
+
+4. find minimum salary of manager.
+
+syntax:
+
+select ename,salary,designation from employees where designation = 'manager' order by salary limit 1;
+                         or
+select ename,salary,designation from employees where designation = 'manager' order by salary asc limit 1;
+
+5.  find the member from employees who are female and post trainer and commission max.
+
+syntax:
+
+select ename,gender,commission,designation from employees where gender = 'f' and designation = 'trainer' order by commission desc limit 1;
+
+6.  find the member from employees who are female and post developer and commission max.
+
+syntax:
+
+select ename,gender,commission,designation from employees where gender = 'f' and designation = 'developer' order by commission desc limit 1;
+
+7. find second highest salary
+
+syntax:
+
+select salary from employees order by salary desc limit 1,1;
+
+8. find second lowest salary
+
+syntax:
+
+select salary from employees order by salary limit 1,1;
+
+
+so in this way we can perform various task using limit command of SQL.
+For better understanding do see my video in my youtube channel.
+Thnak You
+Top5Advice
+ 
