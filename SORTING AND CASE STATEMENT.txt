@@ -1,0 +1,58 @@
+Sorting and case statement in SQL
+
+sorting:
+
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+
+The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
+
+ORDER BY SYNTAX:
+
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC; 
+
+EG:
+
+SELECT * FROM EMPLOYEES ORDER BY SALARY;
+
+FOR DESCENDING ORDERING:
+
+SELECT * FROM EMPLOYEES ORDER BY SALARY DESC;
+
+ORDER BY SEVERAL COLUMN:
+
+SELECT * FROM EMPLOYEES ORDER BY SALARY,COMMISSION;
+
+HERE RESULT TABLE IS SORTED BY USING SALARY AS FIRST PRIORITY BUT COMMISSION CAME UNDER ACTION WHEN WE HAVE GOT SAME SALARY OF MORE THAN ONE EMPLOYEE.
+
+
+CASE STATEMENT IN SQL:
+
+The CASE statement goes through conditions and returns a value when the first condition is met (like an IF-THEN-ELSE statement). So, once a condition is true, it will stop reading and return the result. If no conditions are true, it returns the value in the ELSE clause.
+
+If there is no ELSE part and no conditions are true, it returns NULL.
+
+SYNTAX:
+
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END; 
+
+EG:
+
+SELECT ENAME,GENDER ,CASE
+	WHEN GENDER = 'F' THEN 'FEMALE'
+	WHEN GENDER = 'M' THEN 'MALE'
+	ELSE 'NOT VALID'
+	END AS RESULT
+	FROM EMPLOYEES;
+
+SO IN THIS WAY WE CAN USE ORDER BY COMMAND FOR SORTING AND CASE STATEMENT. DO CHECK MY VIDEOS TAKING THIS THEORY AS REFRENCE WHICH WILL INCREASE YOUR CONCENTRATION OVER THE TOPIC.
+THANK YOU
+TOP5ADVICE.
+
+
