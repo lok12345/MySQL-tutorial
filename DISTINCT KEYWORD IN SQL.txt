@@ -1,0 +1,9 @@
+DISTINCT KEYWORD IN SQL
+
+The SELECT DISTINCT statement is used to return only distinct (different) values.
+
+Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
+
+HERE I AM NOT PROVIDING ANY NOTES BECAUSE QUERY DONE IN VIDEOS ARE ENOUGH TO EXPLAIN ABOUT DISTINCT KEYWORD.
+
+THANK YOU.
